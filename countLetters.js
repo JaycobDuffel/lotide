@@ -1,8 +1,17 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+const assertArrays = (arr1, arr2) => {
+  let result = true;
+  if (arr1.length !== arr2.length) {
+    result = false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      result = false;
+    }
+  }
+  if (result) {
+    console.log(`✅✅✅ ${arr1} matches ${arr2} ✅✅✅`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑 ${arr1} does not match ${arr2} 🛑🛑🛑`);
   }
 };
 
@@ -19,4 +28,3 @@ countLetters = (string) => {
   return output;
 }
 
-console.log(countLetters("lighthouse in the house"));
