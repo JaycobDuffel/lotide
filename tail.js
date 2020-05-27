@@ -26,4 +26,3 @@ assertEqual(result[1], "Labs");
 let words = ["Bootcamp", "Lighthouse", "Labs", "Javascript"];
 tail(words);
 assertEqual(words.length, 4);
-
