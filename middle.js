@@ -31,8 +31,16 @@ const eqArrays = (arr1, arr2) => {
 const middle = (arr) => {
 
   let resultArr = [];
-  arr.length % 2 === 0 ? resultArr = arr.slice(arr.length / 2 - 1, arr.length / 2 + 1) :  resultArr = arr.slice(Math.round(arr.length/2 -1), arr.length /2 + 1);
-  return resultArr;
+  if (arr.length >= 3 ) {
+    arr.length % 2 === 0 ? resultArr = arr.slice(arr.length / 2 - 1, arr.length / 2 + 1) :  resultArr = arr.slice(Math.round(arr.length/2 -1), arr.length /2 + 1);
+  } else {
+    resultArr = [];
+  }
+  console.log(resultArr)
 }
 
-assertArrays(middle([1, 2, 3, 4, 5, 6]), [3,4]);
+middle([1, 2]) // => [2]
+middle([1, 2, 3]) // => [2]
+middle([1, 2, 3, 4, 5]) // => [3]
+middle([1, 2, 3, 4]) // => [2, 3]
+middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
