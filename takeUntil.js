@@ -3,18 +3,16 @@ const takeUntil = function(arr, cb) {
   const resultArr = [];
   for (const elem of arr) {
     if (cb(elem)) {
-      break;
+      return resultArr;
     } else {
       resultArr.push(elem);
     }
   }
-
-
   return resultArr;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, x => x < -3);
+const results1 = takeUntil(data1, x => x > 5);
 console.log(results1);
 
 console.log('\n --- \n');
