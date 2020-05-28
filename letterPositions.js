@@ -26,9 +26,9 @@ const letterPositions = (str) => {
       output[str[i]] = [i];
     }
   } return output;
-};
+}
 
-assertArrays(letterPositions("bootcamp").o, [1, 2]);
-assertArrays(letterPositions("assertArraysEqual").a, [0, 6, 9, 15]);
-assertArrays(letterPositions("javascript").j, [0]);
-assertArrays(letterPositions("lighthouse Labs").l, [0, 11]);
+assertArrays(letterPositions("bootcamp").o, [1, 2])
+assertArrays(letterPositions("assertArraysEqual").a, [0, 6, 9, 15])
+assertArrays(letterPositions("javascript").j, [0])
+assertArrays(letterPositions("lighthouse Labs").l, [0, 11])
