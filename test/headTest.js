@@ -2,9 +2,6 @@ const assert = require('chai').assert;
 const head = require('../head')
 
 
-// assertEqual(head([17]), 17);
-// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-
 describe("#head", () => {
   it("returns 1 for [1, 2, 3]", () => {
     assert.strictEqual(head([1,2,3]), 1);
