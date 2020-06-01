@@ -17,12 +17,4 @@ const tail = (arr) => {
   return tailArr;
 };
 
-let result = tail(["Hello", "Lighthouse", "Labs", "Bootcamp"]);
-assertEqual(result.length, 3);
-assertEqual(result[2], "Bootcamp");
-assertEqual(result[1], "Labs");
-
-
-let words = ["Bootcamp", "Lighthouse", "Labs", "Javascript"];
-tail(words);
-assertEqual(words.length, 4);
+module.exports = tail;
