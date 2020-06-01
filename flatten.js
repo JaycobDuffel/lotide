@@ -9,7 +9,7 @@ const eqArrays = (arr1, arr2) => {
   }
   return true;
 
-}
+};
 const assertArrays = (arr1, arr2) => {
   // let result = true;
   // if (arr1.length !== arr2.length) {
@@ -34,13 +34,13 @@ const flatten = (array) => {
   let output = [];
   array.forEach(item => {
     if (Array.isArray(item)) {
-      output = output.concat(flatten(item))
+      output = output.concat(flatten(item));
     } else {
-    output.push(item);
-  }
-});
-return output;
-}
-assertArrays(flatten([1, 2, [3, 4], 5, [23, 67, 19], [6]]), [1, 2, 3, 4, 5, 23, 67, 19, 6])
+      output.push(item);
+    }
+  });
+  return output;
+};
+assertArrays(flatten([1, 2, [3, 4], 5, [23, 67, 19], [6]]), [1, 2, 3, 4, 5, 23, 67, 19, 6]);
 
 
