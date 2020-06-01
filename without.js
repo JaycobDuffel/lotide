@@ -37,8 +37,10 @@ const without = (srcArr, itemsToRemove) => {
       
     }
   }
-  console.log(resultArr);
+  return resultArr;
 }
+
+module.exports = without;
 
 
 

@@ -54,4 +54,4 @@ let objran = {
   hairstyle: "perm"
 };
 
-assertObjectsEqual(ranobj, objran);
+module.exports = assertObjectsEqual;

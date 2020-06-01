@@ -46,8 +46,10 @@ const map = (arr, cb) => {
   return outputArr;
 };
 
-const result1 = map(words, word => word.length);
-assertArrays(result1, [ 6, 7, 2, 5, 3 ]);
+// const result1 = map(words, word => word.length);
+// assertArrays(result1, [ 6, 7, 2, 5, 3 ]);
 
-const result2 = map(words, word => word[0]);
-assertArrays(result2,[ 'g', 'c', 't', 'm', 't' ]);
+// const result2 = map(words, word => word[0]);
+// assertArrays(result2,[ 'g', 'c', 't', 'm', 't' ]);
+
+module.exports = map;

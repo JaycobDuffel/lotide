@@ -41,6 +41,7 @@ const flatten = (array) => {
   });
   return output;
 };
-assertArrays(flatten([1, 2, [3, 4], 5, [23, 67, 19], [6]]), [1, 2, 3, 4, 5, 23, 67, 19, 6]);
+// assertArr
 
+module.exports = flatten;
 
