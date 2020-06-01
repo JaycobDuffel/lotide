@@ -2,13 +2,13 @@ const eqArrays = require('./eqArrays');
 
 
 
-const assertArrays = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`✅✅✅ ${arr1} matches ${arr2} ✅✅✅`);
+const assertArrays = (actual, expected) => {
+ 
+  if (eqArrays(actual, expected) === true) {
+    console.log(`✅✅✅ ${actual} matches ${expected} ✅✅✅`);
   } else {
-    console.log(`🛑🛑🛑 ${arr1} does not match ${arr2} 🛑🛑🛑`);
+    console.log(`🛑🛑🛑 ${actual} does not match ${expected} 🛑🛑🛑`);
   }
 };
-
 module.exports = assertArrays;
 
